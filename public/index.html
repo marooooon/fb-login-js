@@ -1,24 +1,26 @@
 <html>
+
 <head>
   <title>Firebase Login</title>
   <script defer src="/__/firebase/6.3.5/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/6.3.5/firebase-auth.js"></script>
-    <script defer src="/__/firebase/6.3.5/firebase-database.js"></script>
-    <script defer src="/__/firebase/6.3.5/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/6.3.5/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/6.3.5/firebase-auth.js"></script>
+  <script defer src="/__/firebase/6.3.5/firebase-database.js"></script>
+  <script defer src="/__/firebase/6.3.5/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/6.3.5/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <div id="register" class="register">
     <h2>Firebase New Register</h2>
     <input type="email" placeholder="Email..." id="email_register" />
     <input type="password" placeholder="Password..." id="password_register" />
-    
+
     <button onclick="register()">New Register</button>
   </div>
 
@@ -43,12 +45,12 @@
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyCzcQKQg4WvOxNWcQXIMgOuw8pTIl-fyR0",
-    authDomain: "login-practice-ce066.firebaseapp.com",
-    databaseURL: "https://login-practice-ce066.firebaseio.com",
-    projectId: "login-practice-ce066",
-    storageBucket: "",
-    messagingSenderId: "569175479783",
-    appId: "1:569175479783:web:5cbe82a49e89ba31"
+      authDomain: "login-practice-ce066.firebaseapp.com",
+      databaseURL: "https://login-practice-ce066.firebaseio.com",
+      projectId: "login-practice-ce066",
+      storageBucket: "",
+      messagingSenderId: "569175479783",
+      appId: "1:569175479783:web:5cbe82a49e89ba31"
     };
     firebase.initializeApp(config);
   </script>

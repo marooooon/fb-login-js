@@ -42,7 +42,7 @@ input, button {
   border: 1px solid #777;
 }
 
-.main-div button, .loggedin-div button ,.register button{
+.main-div button, .loggedin-div button, .register button{
   background: #5d8ffc;
   color: #fff;
   border: 1px solid #5d8ffc;
@@ -55,7 +55,7 @@ input, button {
   -moz-transition: 0.3s;
 }
 
-.main-div button:hover, .loggedin-div button:hover {
+.main-div button:hover, .loggedin-div button:hover, .register button:hover{
   background: #fff;
   color: #5d8ffc;
   border: 1px solid #5d8ffc;
