@@ -11,7 +11,7 @@ input, button {
   font-weight: 700;
 }
 
-.main-div, .loggedin-div {
+.main-div, .loggedin-div{
   width: 20%;
   margin: 0px auto;
   margin-top: 150px;
@@ -19,7 +19,12 @@ input, button {
   display: none;
 }
 
-.main-div input {
+.register {
+  width: 20%;
+  margin: 30px auto 0;
+}
+
+.main-div input,.register input{
   display: block;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -33,11 +38,11 @@ input, button {
   -moz-transition: 0.3s;
 }
 
-.main-div input:focus {
+.main-div input:focus ,.register input:focus {
   border: 1px solid #777;
 }
 
-.main-div button, .loggedin-div button {
+.main-div button, .loggedin-div button ,.register button{
   background: #5d8ffc;
   color: #fff;
   border: 1px solid #5d8ffc;

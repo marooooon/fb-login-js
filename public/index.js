@@ -4,6 +4,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     document.getElementById("user_div").style.display = "block";
     document.getElementById("login_div").style.display = "none";
+    document.getElementById("register").style.display = "none";
 
     var user = firebase.auth().currentUser;
 
@@ -19,6 +20,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     document.getElementById("user_div").style.display = "none";
     document.getElementById("login_div").style.display = "block";
+    document.getElementById("register").style.display = "block";
 
   }
 });
@@ -44,3 +46,17 @@ function logout(){
   firebase.auth().signOut();
 }
 
+function register() {
+  var email = document.getElementById('email_register').value;
+  var password = document.getElementById('password_register').value;
+
+  // 新規ユーザーを登録
+  firebase.auth().createUserWithEmailAndPassword(email, password);
+
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    window.alert("Error : " + errorMessage);
+  });
+}
